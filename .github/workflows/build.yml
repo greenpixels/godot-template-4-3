@@ -15,7 +15,6 @@ env:
 
 jobs:
   delete-artifacts:
-    environment: ${ENVIRONMENT}
     runs-on: ubuntu-20.04
     steps:
       - uses: kolpav/purge-artifacts-action@v1
