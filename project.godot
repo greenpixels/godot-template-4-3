@@ -1,0 +1,36 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Godot 4.3 Template"
+config/version="0.0.0"
+run/main_scene="res://ui/tooltip_component/tooltip_overlay/tooltip_overlay.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+
+[autoload]
+
+TweenHelper="*res://utils/tween_helper/tween_helper.gd"
+TooltipOverlay="*res://ui/tooltip_component/tooltip_overlay/tooltip_overlay.tscn"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+
+[global_group]
+
+tooltip_trigger=""
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
